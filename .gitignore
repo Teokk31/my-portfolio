@@ -267,45 +267,28 @@ my-portfolio/appsettings.json
 UI/package-lock.json
 my-portfolio/appsettings.json
 
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+# Outputs
+bazel-*
+test-project-host-*
+dist/
+dist-schema/
 
-# compiled output
-/dist
-/tmp
-/out-tsc
+# IDEs
+.idea/
+jsconfig.json
+.vscode/
 
-# dependencies
-/node_modules
+# Typings file.
+typings/
 
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+# Misc
+coverage/
+node_modules/
+tmp/
+npm-debug.log*
+yarn-error.log*
+.ng_pkg_build/
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-testem.log
-/typings
-
-# e2e
-/e2e/*.js
-/e2e/*.map
-
-# System Files
+# Mac OSX Finder files.
+**/.DS_Store
 .DS_Store
-Thumbs.db
