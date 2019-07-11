@@ -1,6 +1,11 @@
 language: node_js
 node_js:
   - "11.0"
+cache: 
+  yarn: true
+  directories:
+    - node_modules
+    - .firebase
 branches:
   only:
     - master
