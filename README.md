@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/Teokk31/my-portfolio.svg?branch=master)](https://travis-ci.org/Teokk31/my-portfolio)
 # MyPortfolio
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.0.
