@@ -35,6 +35,7 @@ import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { QuicklinkModule } from 'ngx-quicklink';
 
 
 
@@ -74,7 +75,8 @@ import { FooterComponent } from './footer/footer.component';
     MatSnackBarModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    QuicklinkModule
   ],
   exports: [
     BrowserAnimationsModule,
@@ -109,6 +111,7 @@ import { FooterComponent } from './footer/footer.component';
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
+    QuicklinkModule,
 
     HeaderComponent,
     FooterComponent
