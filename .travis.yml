@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "12.13"
 cache: 
-  yarn: true
+  npm: true
   directories:
     - node_modules
     - .firebase
