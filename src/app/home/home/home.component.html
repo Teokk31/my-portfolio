@@ -46,101 +46,19 @@
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="timeline">
-                        <li>
+                        <li *ngFor="let experience of experiences; index as i" [ngClass]="{'timeline-inverted': i%2 === 0}">
                             <div class="timeline-image">
-                                <img class="rounded-circle img-fluid" src="assets/img/experience/experience_0.png"
+                                <img class="rounded-circle img-fluid" src="{{experience.companyLogo}}"
                                     alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Mar 2012 - Jun 2012</h4>
-                                    <h4 class="subheading">Web Developer Internship</h4>
-                                    <h4 class="subheading text-muted">EntreVenture</h4>
+                                    <h4>{{experience.lengthOfService}}</h4>
+                                    <h4 class="subheading">{{experience.position}}</h4>
+                                    <h4 class="subheading text-muted">{{experience.company}}</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p>First time got into web development, everything was so new and exciting. Mainly
-                                        developing a web application using Ruby on Rails and integrate with Facebook
-                                        API.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="rounded-circle img-fluid" src="assets/img/experience/experience_1.png"
-                                    alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Aug 2013 – Oct 2013</h4>
-                                    <h4 class="subheading">ICT Officer</h4>
-                                    <h4 class="subheading text-muted">JF Apex Securities</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>Developing forms that interacting with company database using Oracle Forms
-                                        Builder.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="rounded-circle img-fluid" src="assets/img/experience/experience_2.png"
-                                    alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Nov 2013 – Aug 2016</h4>
-                                    <h4 class="subheading">Web Developer</h4>
-                                    <h4 class="subheading text-muted">Web Professional House Pte Ltd</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>Develop good quality interactive web applications using ASP.NET Web Forms,
-                                        Sitecore CMS, HTML, CSS, and jQuery. Work closely in functional scrum units to
-                                        execute the vision of the business leaders in terms of functionality and user
-                                        experience. Provide solutions, develop and maintains existing websites. Often
-                                        react to small requirement changes and real-time updates required to web sites.
-                                        Mentor and provides guidance to interns.</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="rounded-circle img-fluid" src="assets/img/experience/experience_3.png"
-                                    alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Aug 2016 - Oct 2019</h4>
-                                    <h4 class="subheading">Software Engineer</h4>
-                                    <h4 class="subheading text-muted">ViewPoint Software for Business Sdn. Bhd.</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>Develop efileConnect web application that provides a secure cloud-based AEOI
-                                        Process Management & Electronic Filing Solution using AngularJS and ASP.NET Web
-                                        API. Developed API to allow third-party applications to integrate with
-                                        efileConnect. Integrate efileConnect with various filing authorities’ filing
-                                        systems to allow direct submission from efileConnect. Developed SSRS reporting
-                                        module in efileConnect to generate custom reports.
-
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="rounded-circle img-fluid" src="assets/img/experience/experience_4.png"
-                                    alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Nov 2019 – Present</h4>
-                                    <h4 class="subheading">DevOps Engineer</h4>
-                                    <h4 class="subheading text-muted">Digi Telecommunications</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p>Lead a team for web applications/projects that focus on Cloud-based and
-                                        Serverless microservices architectures. Responsible for DevOps practices and
-                                        culture within the team. Mentor and provides guidance to junior DevOps
-                                        engineers.</p>
+                                    <p>{{experience.description}}</p>
                                 </div>
                             </div>
                         </li>
@@ -205,6 +123,9 @@
         <ul class="list-inline dev-icons text-center">
             <li class="list-inline-item">
                 <i class="fab fa-angular fa-3x"></i>
+            </li>
+            <li class="list-inline-item">
+                <i class="fab fa-react fa-3x"></i>
             </li>
             <li class="list-inline-item">
                 <i class="fab fa-js-square fa-3x"></i>
