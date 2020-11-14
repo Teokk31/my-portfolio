@@ -86,8 +86,14 @@ export class HomeComponent implements OnInit {
       const lengthOfServiceMonths: number =
         differenceInMonths(experience.endDate, experience.startDate) % 12;
       const lengthOfServiceDisplay: string = `${lengthOfServiceYears || ""} ${
-        lengthOfServiceYears ? "years" : ""
-      } ${lengthOfServiceMonths} months`;
+        lengthOfServiceYears === 1
+          ? "year"
+          : lengthOfServiceYears !== 1
+          ? "years"
+          : ""
+      } ${lengthOfServiceMonths} ${
+        lengthOfServiceMonths === 1 ? "month" : "months"
+      }`;
 
       experience.lengthOfService = `${format(
         experience.startDate,
