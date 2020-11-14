@@ -48,7 +48,7 @@
                     <ul class="timeline">
                         <li *ngFor="let experience of experiences; index as i" [ngClass]="{'timeline-inverted': i%2 === 0}">
                             <div class="timeline-image">
-                                <img class="rounded-circle img-fluid" src="{{experience.companyLogo}}"
+                                <img class="img-fluid mt-4" [ngClass]="{'rounded-circle': experience.roundedCircleStyle, 'mt-4': experience.company === 'Ørsted Malaysia'}" src="{{experience.companyLogo}}"
                                     alt="">
                             </div>
                             <div class="timeline-panel">

@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
       companyLogo: "assets/img/experience/experience_0.png",
       description:
         "First time got into web development, everything was so new and exciting. Mainly developing a web application using Ruby on Rails and integrate with Facebook API.",
+      roundedCircleStyle: false,
     },
     {
       company: "JF Apex Securities",
@@ -25,6 +26,7 @@ export class HomeComponent implements OnInit {
       companyLogo: "assets/img/experience/experience_1.png",
       description:
         "Developing forms that interacting with company database using Oracle Forms Builder.",
+        roundedCircleStyle: false,
     },
     {
       company: "Web Professional House Pte Ltd",
@@ -34,6 +36,7 @@ export class HomeComponent implements OnInit {
       companyLogo: "assets/img/experience/experience_2.png",
       description:
         "Develop good quality interactive web applications using ASP.NET Web Forms, Sitecore CMS, HTML, CSS, and jQuery. Work closely in functional scrum units to execute the vision of the business leaders in terms of functionality and user experience. Provide solutions, develop and maintains existing websites. Often react to small requirement changes and real-time updates required to web sites. Mentor and provides guidance to interns.",
+        roundedCircleStyle: true,
     },
     {
       company: "ViewPoint Software for Business Sdn. Bhd.",
@@ -43,6 +46,7 @@ export class HomeComponent implements OnInit {
       companyLogo: "assets/img/experience/experience_3.png",
       description:
         "Develop efileConnect web application that provides a secure cloud-based AEOI Process Management & Electronic Filing Solution using AngularJS and ASP.NET Web API. Developed API to allow third-party applications to integrate with efileConnect. Integrate efileConnect with various filing authorities’ filing systems to allow direct submission from efileConnect. Developed SSRS reporting module in efileConnect to generate custom reports.",
+        roundedCircleStyle: false,
     },
     {
       company: "Digi Telecommunications",
@@ -52,6 +56,7 @@ export class HomeComponent implements OnInit {
       companyLogo: "assets/img/experience/experience_4.png",
       description:
         "Lead a team for web applications/projects that focus on Cloud-based and Serverless microservices architectures. Responsible for DevOps practices and culture within the team. Mentor and provides guidance to junior full stack developers.",
+        roundedCircleStyle: false,
     },
     {
       company: "Ørsted Malaysia",
@@ -59,8 +64,8 @@ export class HomeComponent implements OnInit {
       startDate: new Date(2020, 11, 4),
       endDate: new Date(),
       companyLogo: "assets/img/experience/experience_5.png",
-      description:
-        "-",
+      description: "-",
+      roundedCircleStyle: false,
     },
   ];
 
@@ -103,4 +108,5 @@ export interface IExperience {
   lengthOfService?: string;
   companyLogo: string;
   description: string;
+  roundedCircleStyle: boolean;
 }
