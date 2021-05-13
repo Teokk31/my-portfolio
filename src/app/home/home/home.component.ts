@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { format, differenceInYears, differenceInMonths } from 'date-fns'
-import {} from 'module';
+import { format, differenceInYears, differenceInMonths } from 'date-fns';
 
 @Component({
   selector: 'app-home',
